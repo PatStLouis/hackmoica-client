@@ -1,0 +1,28 @@
+{% extends("layouts/base.jinja") %}
+{% block page %}
+<!-- Hero -->
+<section class="section section-lg bg-secondary overflow-hidden z-2">
+    <div class="container z-2">
+        <div class="row justify-content-center pt-6 pt-md-5 pb-0 mb-2">
+            <div class="col-12 col-xl-7">
+                <div class="card card-tertiary">
+                    <div class="card-header text-center">
+                        <span>Un lab virtuel de HackMoiCa!</span>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Bienvenu sur la plateforme
+                            <span class="text-italic">E.C.H.O
+                                <a href="{{ url_for('secret') }}">.</a>
+                            </span>
+                        </p>
+                        <div class="text-center">
+                            <a href="{{ url_for('login') }}" class="btn btn-sm mr-2 btn-primary border-dark"
+                                role="button"><span class="btn-text">Connecte-toi!</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
